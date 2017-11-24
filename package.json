@@ -1,0 +1,30 @@
+{
+  "name": "renfe-cat-logo-navidad-17",
+  "version": "1.0.0",
+  "description": "Renfe catalogo navidad",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-minify": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://shackleton.git.beanstalkapp.com/el-club-carrefour-nueva-web.git"
+  },
+  "author": "shackleton",
+  "license": "ISC",
+  "homepage": "https://shackleton.git.beanstalkapp.com/el-club-carrefour-nueva-web.git#readme"
+}

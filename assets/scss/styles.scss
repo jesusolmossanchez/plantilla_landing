@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'functions';
+@import 'fonts';
+
+// HTML5 Boiler Plate
+@import 'normalize';
+@import 'main';
+//@import 'rangeslider';
+
+
+
+
+// Estilos personalizados
+
+html, body {
+	font-family: $texto;
+	color: $gris;
+	width: 100vw;
+	overflow-x: hidden;
+	position: relative;
+}
+
+
+body.fixed, html.fixed {
+	overflow: hidden;
+}
+
+html {
+	font-size: .64em !important;
+	overflow-x: hidden;
+}
+body{
+	font-size: 1.2em !important;
+}
+h1,h2,h3,h4,h5,p,a {
+	margin: 0px;
+}
+
+a:focus {
+	outline: none!important;
+}
+
+
+.vcenter {
+	display: -webkit-box;      
+	display: -moz-box;         
+	display: -ms-flexbox;      
+	display: -webkit-flex;     
+	display: flex; 
+	-webkit-align-items : center;
+	align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.no-padding {
+	padding: 0px!important;
+}
+
+
+
+
+/* Responsive Genericos */
+@import 'home';
+@import 'responsive';
+@import 'tablet';
+@import 'mobile';

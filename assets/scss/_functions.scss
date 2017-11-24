@@ -1,0 +1,78 @@
+$original-width: 1920;
+ 
+@function px-to-vw($px) {
+  @return ((($px * 100) / $original-width))+vw;
+}
+
+$original-width-mobile: 320;
+ 
+@function px-to-vw-mobile($px) {
+  @return ((($px * 100) / $original-width-mobile))+vw;
+}
+
+
+//Mixing 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+//transition_all
+@mixin transition_all($time, $ease) {
+    -webkit-transition: all $time $ease;
+       -moz-transition: all $time $ease;
+        -ms-transition: all $time $ease;
+         -o-transition: all $time $ease;
+            transition: all $time $ease;
+}//transition_all
+
+@mixin transition_prop($prop, $time, $ease) {
+    -webkit-transition: $prop $time $ease;
+       -moz-transition: $prop $time $ease;
+        -ms-transition: $prop $time $ease;
+         -o-transition: $prop $time $ease;
+            transition: $prop $time $ease;
+}
+
+@mixin transition_prop_delay($prop, $time, $ease, $delay) {
+    -webkit-transition: $prop $time $ease $delay;
+       -moz-transition: $prop $time $ease $delay;
+        -ms-transition: $prop $time $ease $delay;
+         -o-transition: $prop $time $ease $delay;
+            transition: $prop $time $ease $delay;
+}

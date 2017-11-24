@@ -1,0 +1,48 @@
+@media (max-width :767px) { 
+
+	.oculta_movil{
+		display: none !important;
+	}
+
+	.scrollToTop{
+		display: none;
+	}
+	.no-mobile {
+		display: none;
+	}
+
+	.only-mobile {
+		display: initial!important;
+	}
+
+	.container, .row {
+    	margin: 0 auto;
+    	width: 100%;
+    }
+	
+	.no-tablet {
+		display: none!important;
+	}
+
+	.only-tablet {
+		display: block!important;
+	}
+
+    .container, .row {
+    	margin: 0 auto;
+    	width: 100%;
+    }
+
+   
+
+	@media ( orientation : landscape) { /* TabletDevices Landscape */
+	
+			    
+	}
+	
+	@media ( orientation : portrait) { /* TabletDevices Portrait */
+
+
+	}
+}
+
